@@ -1,9 +1,8 @@
-from input_reader import read
 import re
 import numpy as np
 import math
 
-input_lines = read.input(3)
+input_lines = open(f"inputs/input_03.txt").read()
 
 def parseInput(input):
     return [res for res in re.findall(r"(\d+)", input)]
@@ -22,8 +21,6 @@ for i in range(len(DATA[0])):
         gamma_rate += "0"
         eps_rate += "1"
 
-print(int(gamma_rate, 2))
-print(int(eps_rate, 2))
 print(f"Result Part 1: {int(gamma_rate, 2) * int(eps_rate, 2)}")
 #============================= Part Two =============================
 

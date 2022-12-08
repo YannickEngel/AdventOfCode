@@ -1,8 +1,7 @@
-from input_reader import read
 import numpy as np
 import re
 
-input_lines = read.input(1)
+input_lines = open(f"inputs/input_01.txt").read()
 
 def parseInput(input):
     return np.array(list(map(int, re.findall(r"(\d+)", input))))

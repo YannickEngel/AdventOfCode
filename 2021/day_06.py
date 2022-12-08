@@ -1,6 +1,6 @@
-from input_reader import read
 
-input_lines = read.input(6)
+
+input_lines = open(f"inputs/input_06.txt").read()
 def parseInput(input):
     return[input.count(str(i)) for i in range(9)]
 

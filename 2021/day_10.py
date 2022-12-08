@@ -1,6 +1,4 @@
-from input_reader import read
-
-input_lines = read.inputLines(10)
+input_lines = open(f"inputs/input_10.txt").read()
 
 def parseInput(input):
     return input

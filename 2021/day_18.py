@@ -2,7 +2,7 @@ from input_reader import read
 import re
 import math
 
-input_lines = read.inputLines(18)
+input_lines = open(f"inputs/input_18.txt").read()
 
 def parseInput(input):
     return input

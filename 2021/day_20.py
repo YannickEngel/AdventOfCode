@@ -1,7 +1,6 @@
-from input_reader import read
 import numpy as np
 
-input_lines = read.input(20)
+input_lines = open(f"inputs/input_20.txt").read()
 
 
 def parseInput(input):

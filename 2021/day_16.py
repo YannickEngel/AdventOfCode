@@ -1,6 +1,6 @@
 from input_reader import read
 
-input_lines = read.input(16)
+input_lines = open(f"inputs/input_16.txt").read()
 
 hexToBinString = {
     "0": "0000",

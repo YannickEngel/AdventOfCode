@@ -1,9 +1,7 @@
-from input_reader import read
 import re
 from collections import Counter
 
-input_lines = read.input(14)
-
+input_lines = open(f"inputs/input_14.txt").read()
 def parseInput(input):
     polyTemp, rules = input.split('\n\n')
     seperateRules = {pairs: insertion for pairs, insertion in re.findall(r"(\w+) -> (\w)", rules)}
@@ -34,7 +32,7 @@ for key in coll.keys():
         max = coll[key]
     elif coll[key] < min:
         min = coll[key]
-#print(f"max: {max}, min: {min}")
+
 print(f"Result Part 1: {max - min}")
 #============================= Part Two =============================
 
@@ -62,5 +60,5 @@ for key in chrCount.keys():
         max = chrCount[key]
     elif chrCount[key] < min:
         min = chrCount[key]
-#print(f"max: {max}, min: {min}")
+
 print(f"Result Part 2: {max - min}")

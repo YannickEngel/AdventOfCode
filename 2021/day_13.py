@@ -1,9 +1,6 @@
-
-from input_reader import read
-import re
 import numpy as np
 
-input_lines = read.inputLines(13)
+input_lines = open(f"inputs/input_13.txt").read()
 
 def parseInput(input):
     temp = []

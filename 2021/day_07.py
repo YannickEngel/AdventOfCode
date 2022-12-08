@@ -1,8 +1,7 @@
 import statistics
 import math
-from input_reader import read
 
-input_lines = read.input(7)
+input_lines = open(f"inputs/input_07.txt").read()
 
 def parseInput(input):
     return list(map(int, input.split(',')))

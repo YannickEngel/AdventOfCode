@@ -1,8 +1,8 @@
-from input_reader import read
+
 import re
 import networkx as nx
 
-input_lines = read.inputLines(12)
+input_lines = open(f"inputs/input_12.txt").read()
 
 def parseInput(input):
     return [re.findall(r"(\w+)-(\w+)", line)[0] for line in input]

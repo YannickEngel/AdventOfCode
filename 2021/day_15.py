@@ -1,10 +1,9 @@
-from input_reader import read
 import re
 import numpy as np
 import networkx as nx
 import time
 
-input_lines = read.inputLines(15)
+input_lines = open(f"inputs/input_15.txt").read()
 
 def parseInput(input):
     temp = []

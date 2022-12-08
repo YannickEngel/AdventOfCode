@@ -1,7 +1,6 @@
-from input_reader import read
 import re
 
-input_lines = read.input(2)
+input_lines = open(f"inputs/input_02.txt").read()
 
 def parseInput(input):
     return [(direction, int(amount)) for direction, amount in re.findall(r"(\w+) (\d+)", input)]
